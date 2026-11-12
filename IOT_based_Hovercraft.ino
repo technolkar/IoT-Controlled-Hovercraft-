@@ -7,9 +7,9 @@
 
 Servo servo;
 
-char auth[] = "XIcNwmqvfflgAwIwB5OVHK2V08S-XcVu"; // unique token taken from blynk app
-char ssid[] = "octa145"; // Hotspot Name 
-char pass[] = "techo123"; //hotspot password
+char auth[] = "YOUR_AUTH_TOKEN"; // unique token taken from blynk app
+char ssid[] = "YOUR_WIFI_SSID"; // Hotspot Name 
+char pass[] = "YOUR_WIFI_PASSWORD"; //hotspot password
 
 #define BLYNK_PRINT Serial
 #define ENB D3      //ENB
