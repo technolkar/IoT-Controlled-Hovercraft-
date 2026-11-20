@@ -207,17 +207,12 @@ BLYNK_WRITE(V3) {
 void loop()
 {
   Blynk.run();
-  {
-    servo.write(param.asInt());
-  }
- BLYNK_WRITE(V2)
- {
-  servo.write(0);
- }
- BLYNK_WRITE(V3)
- {
-  servo.write(90);
- }
-{
-  Blynk.run();
 }
+
+// Servo control: these lines used to sit inside loop() and reused V2/V3,
+// which are already the RELAY 3 / RELAY 4 buttons above, so the sketch
+// could not compile. Kept for reference: give them free virtual pins and
+// uncomment to use the servo again.
+// BLYNK_WRITE(V?) { servo.write(param.asInt()); }
+// BLYNK_WRITE(V?) { servo.write(0); }
+// BLYNK_WRITE(V?) { servo.write(90); }
